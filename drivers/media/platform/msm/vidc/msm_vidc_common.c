@@ -144,14 +144,7 @@ static inline int msm_comm_count_active_instances(struct msm_vidc_core *core)
 	return active_instances;
 }
 
-enum load_calc_quirks {
-	LOAD_CALC_NO_QUIRKS = 0,
-	LOAD_CALC_IGNORE_TURBO_LOAD = 1 << 0,
-	LOAD_CALC_IGNORE_THUMBNAIL_LOAD = 1 << 1,
-	LOAD_CALC_IGNORE_NON_REALTIME_LOAD = 1 << 2,
-};
-
-static int msm_comm_get_inst_load(struct msm_vidc_inst *inst,
+int msm_comm_get_inst_load(struct msm_vidc_inst *inst,
 		enum load_calc_quirks quirks)
 {
 	int load = 0;
