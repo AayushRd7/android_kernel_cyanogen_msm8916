@@ -1859,7 +1859,7 @@ static void *def_msm8x16_wcd_mbhc_cal(void)
 	btn_low[4] = 150;
 	btn_high[4] = 150;
 #elif defined(CONFIG_MACH_CP8675)
-	btn_low[0] = 50;
+	btn_low[0] = 25;
 	btn_high[0] = 50;
 	btn_low[1] = 87;
 	btn_high[1] = 87;
@@ -1867,7 +1867,7 @@ static void *def_msm8x16_wcd_mbhc_cal(void)
 	btn_high[2] = 75;
 	btn_low[3] = 112;
 	btn_high[3] = 112;
-	btn_low[4] = 137;
+	btn_low[4] = 113;
 	btn_high[4] = 137;
 #else
 	btn_low[0] = 75;
